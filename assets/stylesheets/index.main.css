@@ -1,0 +1,574 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  grid-template-areas:
+      "about about about"
+      "container-body container-body container-body"
+      "container-exp container-exp container-exp"
+      "container-portfolio1 container-portfolio1 container-portfolio1"
+      "container-portfolio2 container-portfolio2 container-portfolio2"
+      "container-portfolio3 container-portfolio3 container-portfolio3"
+      "container-contact container-contact container-contact";
+      
+}
+
+.about {
+  grid-area: about;
+}
+.container-body{
+  grid-area: container-body;
+}
+.container-exp{
+  grid-area: container-exp;
+}
+.container-portfolio1
+{
+ grid-area: container-portfolio1; 
+}
+.container-portfolio3
+{
+  grid-area: container-portfolio3;
+}
+.container-contact{
+  grid-area: container-contact;
+}
+.container-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin-top: 2%;
+  gap: 20px;
+  grid-template-areas:
+      "about2 . about3"
+      ". . ."
+      ". . .";
+  grid-area: container-body;
+}
+
+.about2 {
+  display: grid;
+  grid-template-columns: 200px 200px 480x;
+  grid-template-rows: 100px 100px 150px; 
+  justify-items:flex-start;
+  grid-template-areas:
+      "explain1 explain1 explain1"
+      "explain2 explain2 explain2"
+      "explain3 explain3 explain3";
+  grid-area: about2;
+}
+
+.explain1 { 
+  grid-area: explain1; 
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+}
+
+.explain2 { 
+  grid-area: explain2;
+  margin-top: spx; 
+  margin-bottom: px;
+}
+
+.explain3 { 
+  grid-area: explain3;
+  font-size: 21px; 
+}
+
+.about3 {
+  display: grid;
+  grid-template-columns: 200px 200px 400x;
+  grid-template-rows: 160px 100px 40px; 
+  margin-top: 100px;
+  text-align: left;
+  grid-template-areas:
+      "explain4 explain4 explain4"
+      "explain5 explain5 explain5"
+      "explain6 explain6 explain6";
+
+  grid-area: about3;
+}
+
+.explain4 { 
+  grid-area: explain4; 
+  margin-top: 80px;
+}
+
+.explain5 { 
+  grid-area: explain5; 
+  font-size: 21px;
+}
+
+.explain6 { 
+  grid-area: explain6; 
+  padding: 10px 20px; 
+  margin: 0 5px;
+  justify-self: left;
+  
+  text-align: left; 
+  background-color: #3296f2;
+  border-radius: 14px;
+  
+}
+.explain6:hover{
+  padding: 10px 20px; 
+  margin: 0 5px;
+  text-align: left; 
+  border: 2px solid #3296f2;
+  border-radius: 16px;
+  background-color: transparent;}
+
+
+.container-exp {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr; 
+  grid-template-rows: 100px 1fr 1fr; 
+  gap: 10px; 
+  grid-auto-flow: row;
+  grid-template-areas:
+    "count . ."
+    ". . ."
+    ". . .";
+}
+
+.count {
+  display: grid;
+  grid-template-columns: 150px 130px 300px; 
+  grid-template-rows: 50px 100px 150px; 
+  gap: 20px; 
+  grid-auto-flow: row;
+  grid-template-areas:
+    "exp1 exp2 exp3"
+    "exp4 exp5 exp6"
+    ". . .";
+  grid-area: count;
+}
+
+.exp1 { 
+  grid-area: exp1; }
+
+.exp2 { 
+ 
+  grid-area: exp2; }
+.exp3 { 
+  
+  grid-area: exp3; }
+
+.exp4 {
+   grid-area: exp4; }
+
+.exp5 { 
+  grid-area: exp5; }
+
+.exp6 { 
+  grid-area: exp6; }
+  
+.container-portfolio1 {
+  display: grid;
+  margin-top: 8%;
+  text-align: left;
+   grid-template-areas: 
+      "h1-portfolio"
+      "p1-portfolio";
+}
+
+.h1-portfolio { 
+   grid-area: h1-portfolio;
+   margin-block-start: auto;
+   margin-block-end: auto;
+
+ }
+.p1-portfolio {
+   grid-area: p1-portfolio;
+   
+ }
+
+.container-portfolio2 {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 4%;
+  grid-template-areas:
+    "picture2-portfolio portfolio2";
+  width: 950px;
+  background-color: #c0def1; 
+  border-radius: 25px; 
+ padding: 2%;
+  
+}
+
+.picture2-portfolio { grid-area: picture2-portfolio; }
+
+.portfolio2 {  
+  display: grid;
+  height: 80px;
+  gap: 20%;
+  grid-template-rows:auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h2-portfolio h2-portfolio h2-portfolio"
+    "p2-portfolio p2-portfolio p2-portfolio"
+    "buttton-portfolio . .";
+  grid-area: portfolio2;
+}
+.h2-portfolio { grid-area: h2-portfolio;
+  line-height: 0px;
+  margin-block-end:auto;
+  margin-block-start:auto;
+  font-size: 57px;
+  font-family: 'jakarta sans', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(17, 17, 17);
+}
+.p2-portfolio { grid-area: p2-portfolio; 
+ margin-block-end:auto;
+  margin-block-start:auto;
+  font-family: 'jakarta sans', sans-serif;
+    line-height: 1;
+    color: rgb(17, 17, 17);
+}
+
+.buttton-portfolio { 
+  grid-area: buttton-portfolio; 
+  padding: 10px 10px 10px 10px; 
+  justify-self: left;
+  text-align: center; 
+  background-color: #3296f2;
+  border-radius: 14px;
+  line-height:normal;
+  margin-block-end:auto;
+  margin-block-start:auto;
+}
+
+.container-portfolio3 {  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 4%;
+  justify-content: right;
+  grid-template-areas:
+    "portfolio3 picture3-portfolio";
+  background-color: #c0def1; 
+  border-radius: 25px; /* Border-radius */
+ padding: 2%;
+ margin-left: 150px;
+
+}
+
+.picture3-portfolio { grid-area: picture3-portfolio; }
+
+.portfolio3 {  
+  display: grid;
+  height: 100px;
+  gap: 30%;
+  grid-template-rows:auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "h3-portfolio h3-portfolio h3-portfolio"
+    "p3-portfolio p3-portfolio p3-portfolio"
+    "buttton-portfolio2 . .";
+  grid-area: portfolio3;
+}
+.h3-portfolio { grid-area: h3-portfolio;
+  line-height: 0px;
+  margin-block-end:auto;
+  margin-block-start:auto;
+  font-size: 57px;
+    font-family: 'jakarta sans', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(17, 17, 17);
+}
+.p3-portfolio { grid-area: p3-portfolio; 
+ margin-block-end:auto;
+  margin-block-start:auto;
+  font-family: 'jakarta sans', sans-serif;
+  
+    line-height: 1;
+    color: rgb(17, 17, 17);
+}
+
+.buttton-portfolio2 { 
+  grid-area: buttton-portfolio2; 
+  padding: 10px 10px 10px 10px; 
+  justify-self: left;
+  text-align: center; 
+  background-color: #3296f2;
+  border-radius: 14px;
+  line-height:normal;
+  margin-block-end:auto;
+  margin-block-start:auto;
+}
+
+.container-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 60%;
+  gap: 5%;
+  margin-top: 8%;
+}
+
+.h1-contact {
+  font-size: 24px;
+  font-weight: 700;
+  margin-block-end:auto;
+  margin-block-start:auto;
+
+}
+
+.p1-contact {
+  font-size: 16px;
+  margin-block-end:auto;
+  margin-block-start:auto;
+}
+.container-contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; /* Spacing between form elements */
+}
+
+.container-contact label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.container-contact input,
+.container-contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.container-contact button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3296f2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container-contact button:hover {
+  background-color: #2678c8;
+}
+
+
+/* TABLET MEDIA QUERY - GRID SYSTEM */
+
+@media all and (max-width: 1279px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "about about"
+      "container-body container-body"
+      "container-exp container-exp"
+      "container-portfolio1 container-portfolio1"
+      "container-portfolio2 container-portfolio2"
+      "container-portfolio3 container-portfolio3"
+      "container-contact container-contact";
+    gap: 20px;
+  }
+
+  .about2, .about3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "explain1"
+      "explain2"
+      "explain3";
+  }
+
+  .container-portfolio2, .container-portfolio3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture2-portfolio"
+      "portfolio2";
+  }
+
+  .container-portfolio2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "container-body"
+      "container-exp"
+      "container-portfolio1"
+      "container-portfolio2"
+      "container-portfolio3"
+      "container-contact";
+  }
+
+  .about2, .about3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "explain1"
+      "explain2"
+      "explain3";
+  }
+
+  .container-portfolio2, .container-portfolio3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture2-portfolio"
+      "portfolio2";
+  }
+
+  .container-portfolio2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "about"
+      "container-body"
+      "container-exp"
+      "container-portfolio1"
+      "container-portfolio2"
+      "container-portfolio3"
+      "container-contact";
+    gap: 10px;
+  }
+
+  .about2, .about3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "explain1"
+      "explain2"
+      "explain3";
+  }
+
+  .container-portfolio2, .container-portfolio3 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture2-portfolio"
+      "portfolio2";
+  }
+
+  .container-portfolio2 {
+    width: 100%;
+  }
+}
+
+
+/* HERO ELEMENT */
+.container-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 10%; 
+  margin: 5%; 
+}
+
+.hero-text1 {
+  grid-column: 1 / 2; 
+  text-align: left; 
+  align-self: center; 
+  font-size: 21px;
+}
+
+.hero-picture1 {
+  grid-column: 2 / 3; 
+  text-align: center; 
+  align-self: center; 
+}
+
+.hero-picture2 {
+  grid-column: 3 / 4; 
+  text-align: right; 
+  align-self: center;
+}
+.container-hero-button {
+  display: grid;
+  grid-template-columns: auto auto; 
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.hero-button1{
+  padding: 10px 20px; 
+  margin: 0 5px; 
+  text-align: right; 
+}
+.hero-button2{
+  padding: 10px 20px; 
+  margin: 0 5px;
+  text-align: left; 
+  background-color: #3296f2;
+  border-radius: 14px;
+}
+.hero-button2:hover{
+    padding: 10px 20px; 
+    margin: 0 5px;
+    text-align: left; 
+    border: 2px solid #3296f2;
+    border-radius: 16px;
+    background-color: transparent;
+ 
+}
+.hero1 {
+  height: 700px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin: 0px -64px;
+}
+
+.hero-overlay {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-overlay h1 {
+  margin-top: px;
+  margin-bottom: 0px;
+}
+
+
+
+.hero-overlay .hero-button {
+  background-color: var(--color-main);
+  color: var(--color-background);
+
+  border-radius: 4px;
+  padding: 8px 16px;
+
+  text-decoration: none;
+}
+
+.hero-overlay .hero-button:hover {
+  background-color: var(--color-main-darker);
+}
+
+/* TABLET MEDIA QUERY - ELEMENT */
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+      margin: 0px -32px;
+  }
+}
+
+/* MOBILE PHONE MEDIA QUERY - ELEMENT */
+
+@media screen and (max-width: 480px) {
+
+  /* Custom style goes here */
+}
